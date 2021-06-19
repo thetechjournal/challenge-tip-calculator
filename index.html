@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator_container">
+       
+        <h1>Tip Calculator</h1>
+        <form id="form-calculate" action="#" method="post">
+            <div class="content">
+                <div class="form_control">
+                    <label for="bill">Bill Amount (in $)</label>
+                    <input type="number" id="bill_value" placeholder="100" required autofocus min="1" max="50000"/>
+                </div>
+                
+                <div class="form_control">
+                   
+                    <label for="service_quality">Select Tip (%)</label>
+                    <select id="service_quality">
+                        <option value="0.3">30% Outstanding Service</option>
+                        <option value="0.2">20% Very Good Service</option>
+                        <option value="0.15">15% Good Service</option>
+                        <option selected value="0.1">10% - Service was OK</option>
+                        <option value="0.05">5% - Terrible Service</option>
+                    </select>
+                </div>
+        
+                <div class="form_control">
+                    <label for="people">Number of People</label>
+                    <input type="number" id="number_of_people" placeholder="1" required min="1" max="500"/>
+                </div>
+        
+                <div class="btn">
+                    <button type="submit" id="btn_calculate" class="btn"><i class="fas fa-calculator"></i> Calculate Total Tip</button>
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                
+                <div class="result">
+                    <span>Total Amount:</span><strong id="total-amount">$__</strong>
+                </div>
+                <div class="result">
+                    <span>Total Tip:</span><strong id="total-tip">$__</strong>
+                </div>
+                <div class="result">
+                    <span>Tip per person:</span><strong id="tip_per_person">$__</strong>
+                </div>
+                <div class="result">
+                    <span>Amount per Person:</span><strong id="total_per_person">$__</strong>
+                </div>
+            </footer>
+        </form>
+        
+        
+        
+    </div>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
