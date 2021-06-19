@@ -5,3 +5,4 @@
 * https://scrimba.com/scrim/cobc540ba9529f78bc7f67172
 
 ## Published Version:
+* https://thetechjournal.github.io/challenge-tip-calculator/
